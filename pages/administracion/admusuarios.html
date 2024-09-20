@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de Usuarios</title>
+    <link rel="stylesheet" href="/Assets/CSS/generales.css">
+    <link rel="stylesheet" href="/Assets/CSS/admusuarios.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">FoodDelivery</a>
+            <ul class="navbar-menu">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="pages/menu/menu.html">Menú</a></li>
+                <li><a href="/pages/carrito/carrito.html">Carrito</a></li>
+                <li><a href="#">Administrar</a></li>
+                <li><a href="/login.html">Mi Cuenta</a></li>
+                <li><a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="admin-nav">
+        <ul>
+            <li><a href="admusuarios.html"  class="active">Administrar Usuarios</a></li>
+            <li><a href="admmenus.html">Administrar Menús</a></li>
+        </ul>
+    </nav>
+
+    <div class="admin-container">
+        <h1>Administrar Usuarios</h1>
+
+        <!-- Tabla de Usuarios -->
+        <div class="user-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@example.com</td>
+                        <td>Administrador</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="delete-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>María López</td>
+                        <td>maria.lopez@example.com</td>
+                        <td>Usuario</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="delete-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="add-user-form">
+            <h2>Agregar Nuevo Usuario</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Rol:</label>
+                    <select id="role" name="role">
+                        <option value="Usuario">Usuario</option>
+                        <option value="Administrador">Administrador</option>
+                    </select>
+                </div>
+                <button type="submit" class="add-btn">Agregar Usuario</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FoodDelivery. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

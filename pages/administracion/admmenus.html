@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de Menus</title>
+    <link rel="stylesheet" href="/Assets/CSS/generales.css">
+    <link rel="stylesheet" href="/Assets/CSS/admmenus.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">FoodDelivery</a>
+            <ul class="navbar-menu">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../menu/menu.html">Menú</a></li>
+                <li><a href="../carrito/carrito.html">Carrito</a></li>
+                <li><a href="#">Administrar</a></li>
+                <li><a href="../../login.html">Mi Cuenta</a></li>
+                <li><a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav class="admin-nav">
+        <ul>
+            <li><a href="admusuarios.html">Administrar Usuarios</a></li>
+            <li><a href="admmenus.html" class="active">Administrar Menús</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="admin-container">
+        <h1>Administrar Menús</h1>
+
+        <!-- Tabla de Menús -->
+        <div class="menu-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Disponibilidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pizza Margherita</td>
+                        <td>Pizza</td>
+                        <td>$10.99</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="delete-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hamburguesa Clásica</td>
+                        <td>Hamburguesa</td>
+                        <td>$8.99</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="delete-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Más filas de menús -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Formulario para Agregar Menú -->
+        <div class="add-menu-form">
+            <h2>Agregar Nuevo Platillo</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Nombre del Platillo:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="Pizza">Pizza</option>
+                        <option value="Hamburguesa">Hamburguesa</option>
+                        <option value="Ensalada">Ensalada</option>
+                        <option value="Bebida">Bebida</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Precio:</label>
+                    <input type="text" id="price" name="price" required>
+                </div>
+                <div class="form-group">
+                    <label for="availability">Disponibilidad:</label>
+                    <select id="availability" name="availability">
+                        <option value="Disponible">Disponible</option>
+                        <option value="No Disponible">No Disponible</option>
+                    </select>
+                </div>
+                <button type="submit" class="add-btn">Agregar Platillo</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FoodDelivery. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

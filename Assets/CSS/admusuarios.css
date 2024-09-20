@@ -1,0 +1,151 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+nav{
+    margin-bottom: 50px;
+}
+.admin-container {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+.admin-nav {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.admin-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-nav li {
+    margin: 0 10px;
+}
+
+.admin-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-nav a:hover, .admin-nav a.active {
+    background-color: #32bad9;
+    color: white;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para la tabla de usuarios */
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.user-list th, .user-list td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-list th {
+    background-color: #32bad9;
+    color: white;
+    font-size: 1rem;
+}
+
+.user-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-list .edit-btn, .user-list .delete-btn {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #ff4b4b;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #ff1f1f;
+}
+
+/* Estilo del formulario de agregar usuario */
+.add-user-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.add-user-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-btn {
+    display: block;
+    width: 100%;
+    background-color: #32bad9;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #2895af;
+}

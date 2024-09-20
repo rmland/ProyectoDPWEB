@@ -1,0 +1,65 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Estilo para el contenedor de ofertas */
+.offers-container {
+    margin-top: 100px; /* Asegúrate de dejar espacio debajo del navbar */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para la cuadrícula de ofertas */
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta las columnas de la cuadrícula */
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+    justify-content: center; /* Centra la cuadrícula horizontalmente */
+}
+
+/* Estilo para cada elemento de oferta */
+.offer-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.offer-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.offer-item h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.offer-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.offer-item span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}

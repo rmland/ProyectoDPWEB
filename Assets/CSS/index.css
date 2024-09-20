@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+.hero {
+    background-color: #f4f4f4;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #32BAD9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #29a1b5;
+}
+
+.categories {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.categories .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.categoria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.categoria-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.categoria-card h5 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+}
+
+.categoria-card p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
